@@ -7,10 +7,9 @@
         var eid=document.getElementById("email_Id").value;
         var pass=document.getElementById("password").value;
         var data = JSON.stringify({"email":eid,"password":pass});
-
+        var cookie=document.cookie;
         var xhr = new XMLHttpRequest();
         xhr.withCredentials = false;
-
         xhr.addEventListener("readystatechange", function() {
         if(this.readyState === 4) {
             var status_code=this.status;

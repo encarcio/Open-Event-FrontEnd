@@ -14,15 +14,21 @@ body{
     width: 5%;
     height: 5%;
 }
-#signup
-{
-    width:500px;
-}
-h1{
+#eventHeader{
     font-family: cursive;
-    font-weight: bolder;
 }
-.form-group label{
+#event-title{
+    font-weight: 900;
+}
+#eventImage{
+    width: 95%;
+    float: left;
+}
+.eventDisplayText{
+    font-weight: bolder;
     font-style: cursive;
 }
-
+#eventDescription{
+    font-weight: 900;
+    font-style: cursive;
+}
