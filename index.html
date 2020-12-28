@@ -17,6 +17,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="test.js"></script>
     <title>Home</title>
     <style>
         img {
@@ -24,21 +25,17 @@
             float: left;
             margin: 1.66%;
         }
-
         .nav {
             background: transparent;
         }
-
         .navbar {
             margin: 10px;
         }
-
         body,
         html {
             background-image: url("background-img.png");
             height: 100%;
         }
-
         h1 {
             text-transform: uppercase;
             font-size: 50px;
@@ -46,14 +43,12 @@
             font-weight: 800;
             margin-top: 50px;
         }
-
         h2 {
             font-size: 40px;
             text-align: center;
             font-weight: 800;
             margin-top: 50px;
         }
-
         .margin-small {
             margin-top: 20px;
         }
@@ -115,100 +110,12 @@
         </div>
         <div class="container">
             <div class="row margin-small">
-                <div class="card-deck">
-                    <div class="card">
-                        <a href="event.html"><img src="img2.png" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Bootcamp</h5>
-                            <p class="card-text">Sat, Nov 28, 7:00 PM</p>
-                            <p class="card-text">Bootcamp details</p>
-                            <p class="card-text"><small class="text-muted">By Coding Club</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bootcamp</h5>
-                            <p class="card-text">Sat, Nov 28, 7:00 PM</p>
-                            <p class="card-text">Bootcamp details</p>
-                            <p class="card-text"><small class="text-muted">By Coding Club</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bootcamp</h5>
-                            <p class="card-text">Sat, Nov 28, 7:00 PM</p>
-                            <p class="card-text">Bootcamp details</p>
-                            <p class="card-text"><small class="text-muted">By Coding Club</small></p>
-                        </div>
-                    </div>
+                <div class="card-deck" id="id">
                 </div>
             </div>
+            
             <div class="row margin-small">
-                <div class="card-deck">
-                    <div class="card">
-                        <img src="img2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bootcamp</h5>
-                            <p class="card-text">Sat, Nov 28, 7:00 PM</p>
-                            <p class="card-text">Bootcamp details</p>
-                            <p class="card-text"><small class="text-muted">By Coding Club</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bootcamp</h5>
-                            <p class="card-text">Sat, Nov 28, 7:00 PM</p>
-                            <p class="card-text">Bootcamp details</p>
-                            <p class="card-text"><small class="text-muted">By Coding Club</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bootcamp</h5>
-                            <p class="card-text">Sat, Nov 28, 7:00 PM</p>
-                            <p class="card-text">Bootcamp details</p>
-                            <p class="card-text"><small class="text-muted">By Coding Club</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row margin-small">
-                <div class="card-deck">
-                    <div class="card">
-                        <img src="img2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bootcamp</h5>
-                            <p class="card-text">Sat, Nov 28, 7:00 PM</p>
-                            <p class="card-text">Bootcamp details</p>
-                            <p class="card-text"><small class="text-muted">By Coding Club</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bootcamp</h5>
-                            <p class="card-text">Sat, Nov 28, 7:00 PM</p>
-                            <p class="card-text">Bootcamp details</p>
-                            <p class="card-text"><small class="text-muted">By Coding Club</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bootcamp</h5>
-                            <p class="card-text">Sat, Nov 28, 7:00 PM</p>
-                            <p class="card-text">Bootcamp details</p>
-                            <p class="card-text"><small class="text-muted">By Coding Club</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row margin-small">
-                <button type="button" class="btn btn-primary btn-lg btn-block" style="margin-left: 150px; margin-right: 150px; margin-bottom: 25px;">See More</button>
+                <button onclick="createEventCard();" type="button" class="btn btn-primary btn-lg btn-block" style="margin-left: 150px; margin-right: 150px; margin-bottom: 25px;">See More</button>
             </div>
         </div>
         

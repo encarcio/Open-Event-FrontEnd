@@ -30,7 +30,7 @@ function printDate() {
 
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = false;
-
+    
     xhr.addEventListener("readystatechange", function() {
     if(this.readyState === 4) {
         var status_code=this.status;
@@ -44,7 +44,7 @@ function printDate() {
             alert("Wrong email");
             location.reload();
         }
-        
+
     }
     });
 
