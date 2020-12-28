@@ -19,6 +19,7 @@
         console.log(password+"  "+confirmPassword+" "+fname+" "+lname);
 
         var data = JSON.stringify({"firstName":fname,"lastName":lname,"address":address,"city":city,"email":email,"phone":phone,"password":password});
+
         var xhr = new XMLHttpRequest();
         xhr.withCredentials = false;
 
