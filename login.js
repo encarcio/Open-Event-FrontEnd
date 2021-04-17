@@ -20,8 +20,8 @@
             }
 
             else{
-            alert("Wrong email or password");
-            location.reload();
+                alert("Wrong email or password");
+                location.reload();
             }
             console.log(this.status);
         }
