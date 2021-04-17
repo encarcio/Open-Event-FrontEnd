@@ -17,7 +17,7 @@ function matchPassword() {
             }
         });
         xhr.open("POST", ""); //server link for handling data to be added
-        xhr.setRequestHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE1OTg1ODY4OTQsImlhdCI6MTU5ODU1MDg5NH0.rnwwXGxDN5z3Y7Cz0z_MeCwpUJ0RLbVvYce5xYWMwd8");
+        xhr.setRequestHeader("Authorization", "");
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(data);
     }else{
