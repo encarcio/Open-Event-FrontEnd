@@ -1,11 +1,12 @@
 function matchPassword() {
     var newPassword=document.getElementById("newPassword").value;
     var confirmPassword=document.getElementById("confirmPassword").value;
+    var email=document.getElementById("email_Id").value;
     if(newPassword===confirmPassword)
     {
         var xhr=new XMLHttpRequest();
         xhr.withCredentials=false;
-        var data=JSON.stringify({"newPassword":newPassword});
+        var data=JSON.stringify({"email":email,"newPassword":newPassword});
         xhr.addEventListener("readystatechange",function(){
             if(this.readyState===4)
             {
