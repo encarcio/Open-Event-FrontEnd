@@ -25,8 +25,15 @@
         
         xhr.addEventListener("readystatechange", function() {
         if(this.readyState === 4) {
-            console.log(this.responseText);
-            indexRoute();
+            var status=this.status;
+            if(status==409)
+            {
+                alert("Duplicate Email Found. Please enter a unique email");
+                location.reload;
+            }else{
+                console.log(this.responseText);
+                indexRoute();
+            }
         }
         });
 
