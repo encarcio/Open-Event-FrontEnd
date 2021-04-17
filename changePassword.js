@@ -6,7 +6,7 @@ function matchPassword() {
     {
         var xhr=new XMLHttpRequest();
         xhr.withCredentials=false;
-        var data=JSON.stringify({"email":email,"newPassword":newPassword});
+        var data=JSON.stringify({"email":email,"password":newPassword});
         xhr.addEventListener("readystatechange",function(){
             if(this.readyState===4)
             {
