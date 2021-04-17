@@ -10,14 +10,14 @@ function matchPassword() {
             if(this.readyState===4)
             {
                 console.log("Success. Password Successfully Changed");
-               // window.location.replace("login.html"); Uncomment this and add the link you want to use to redirect to
+               window.location.replace("login.html");// Uncomment this and add the link you want to use to redirect to
             }
             else{
                 console.log("")
             }
         });
-        xhr.open("POST", ""); //server link for handling data to be added
-        xhr.setRequestHeader("Authorization", "");
+        xhr.open("POST", "http://localhost:8080/reset"); //server link for handling data to be added
+        xhr.setRequestHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE1OTg1ODY4OTQsImlhdCI6MTU5ODU1MDg5NH0.rnwwXGxDN5z3Y7Cz0z_MeCwpUJ0RLbVvYce5xYWMwd8");
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(data);
     }else{

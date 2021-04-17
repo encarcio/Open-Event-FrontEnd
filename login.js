@@ -16,7 +16,7 @@
 
             if(status_code==202){
             console.log("Success");
-            window.location.replace("file:///C:/Users/hp/Desktop/projects/FRONTEND_PROJECT/index.html");
+            window.location.replace("index.html");
             }
 
             else{
